@@ -1,0 +1,48 @@
+@import url("https://raw.githubusercontent.com/inieto/cyclos-instagram-theme/master/default.css");
+
+.headerFull {
+  background-color: #ffffff;
+}
+
+.notification-information {
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+}
+
+.tableSectionHeader {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.pageHeadingText {
+  font-size: 24px;
+  color: #262626;
+  line-height: 38px;
+  margin: 32px 0 16px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.main, .leftMenuItem, .leftMenu, ul.leftMenuItem, .leftMenuSection {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+.leftMenuItem, .leftMenuSection {
+  background: none;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+}
+
+.leftMenuSection {
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body, td, th, input, textarea, select, button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
