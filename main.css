@@ -1,7 +1,8 @@
 @import url("https://raw.githubusercontent.com/inieto/cyclos-instagram-theme/master/default.css");
 
 .headerFull {
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+  background-color: #aaaaaa;
 }
 
 .notification-information {
