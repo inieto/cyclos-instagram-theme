@@ -1,0 +1,351 @@
+@body-background-color: @body-background;
+@font-color: @text;
+@disabled-font-color: #aaa;
+@link-color: @link;
+@light-background-font-color: #333;
+@dark-background-font-color: #fff;
+@light-background-shadow-color: rgba(255,255,255,0.7);
+@dark-background-shadow-color: rgba(0,0,0,0.7);
+@attention-color: #f00;
+@button-disabled-background: #bab9b9;
+@shadow-color: foregroundColor(@body-background-color, @light-background-shadow-color, @dark-background-shadow-color);
+
+@layout-size-small: 720px;
+@layout-size-medium: 940px;
+@layout-size-large: 1160px;
+@side-panel-width: 205px;
+
+@page-heading-font-color: @title;
+@page-heading-shadow-color: @shadow-color;
+@page-heading-border-color: @inner-box-border;
+@page-section-font-color: @page-heading-font-color;
+@page-section-border-color: @page-heading-border-color;
+@table-section-color: @page-heading-font-color;
+@table-section-border-color: @page-heading-border-color;
+
+@horizontal-menu-gradient-type: @horizontal-menu-style;
+@horizontal-menu-font-color: foregroundColor(@horizontal-menu-background-bottom, @light-background-font-color, @dark-background-font-color);
+@horizontal-menu-font-shadow-color: foregroundColor(@horizontal-menu-background-bottom, @light-background-shadow-color, @dark-background-shadow-color);
+@horizontal-menu-selected-font-color: foregroundColor(@horizontal-menu-selected-background-bottom, @light-background-font-color, @dark-background-font-color);
+@horizontal-menu-selected-font-shadow-color: foregroundColor(@horizontal-menu-selected-background-bottom, @light-background-shadow-color, @dark-background-shadow-color);
+@horizontal-menu-top-border-color: darken(@horizontal-menu-background-top, 10%);
+@horizontal-menu-bottom-border-color: darken(@horizontal-menu-background-bottom, 5%);
+@horizontal-menu-banking-icon: ~"url('STYLE_ICON:MENU_BANKING:@{horizontal-menu-icon}')";
+@horizontal-menu-marketplace-icon: ~"url('STYLE_ICON:MENU_MARKETPLACE:@{horizontal-menu-icon}')";
+@horizontal-menu-community-icon: ~"url('STYLE_ICON:MENU_COMMUNITY:@{horizontal-menu-icon}')";
+@horizontal-menu-map-directory-icon: ~"url('STYLE_ICON:MENU_MAP_DIRECTORY:@{horizontal-menu-icon}')";
+@horizontal-menu-home-icon: ~"url('STYLE_ICON:MENU_HOME:@{horizontal-menu-icon}')";
+@horizontal-menu-personal-icon: ~"url('STYLE_ICON:MENU_PERSONAL:@{horizontal-menu-icon}')";
+@horizontal-menu-reportsAndAlerts-icon: ~"url('STYLE_ICON:MENU_REPORTS_AND_ALERTS:@{horizontal-menu-icon}')";
+@horizontal-menu-systemBanking-icon: ~"url('STYLE_ICON:MENU_SYSTEM_BANKING:@{horizontal-menu-icon}')";
+@horizontal-menu-systemManagement-icon: ~"url('STYLE_ICON:MENU_SYSTEM_MANAGEMENT:@{horizontal-menu-icon}')";
+@horizontal-menu-contentManagement-icon: ~"url('STYLE_ICON:MENU_CONTENT_MANAGEMENT:@{horizontal-menu-icon}')";
+@horizontal-menu-userManagement-icon: ~"url('STYLE_ICON:MENU_USER_MANAGEMENT:@{horizontal-menu-icon}')";
+
+@popup-menu-border-color: @page-heading-border-color;
+@popup-menu-section-color: @page-heading-font-color;
+@popup-menu-background-color: @field-background;
+@popup-menu-item-color: foregroundColor(@popup-menu-background-color, @light-background-font-color, @dark-background-font-color);
+@popup-menu-item-hover-background-color: @menu-item-hover;
+@popup-menu-item-hover-color: foregroundColor(@popup-menu-item-hover-background-color, @light-background-font-color, @dark-background-font-color);
+
+@status-menu-color: @status-menu;
+@status-menu-text-color: darken(@status-menu, 15%);
+@status-menu-separator-color: fade(@status-menu-text-color, 30%);
+@status-menu-badge-color: @attention-color;
+@status-menu-badge-text-color: foregroundColor(@status-menu-badge-color, @light-background-font-color, @dark-background-font-color);
+@status-menu-cart-icon: ~"url('STYLE_ICON:STATUS_CART:@{status-menu}')";
+@status-menu-logout-icon: ~"url('STYLE_ICON:STATUS_LOGOUT:@{status-menu}')";
+@status-menu-messages-icon: ~"url('STYLE_ICON:STATUS_MESSAGES:@{status-menu}')";
+@status-menu-notifications-icon: ~"url('STYLE_ICON:STATUS_NOTIFICATIONS:@{status-menu}')";
+@status-menu-personal-icon: ~"url('STYLE_ICON:STATUS_PERSONAL:@{status-menu}')";
+@status-menu-popup-background-color: @field-background;
+@status-menu-popup-border-color: @field-border-color;
+@status-menu-popup-item-color: foregroundColor(@status-menu-popup-background-color, @light-background-font-color, @dark-background-font-color);
+@status-menu-popup-item-hover-background-color: @menu-item-hover;
+@status-menu-popup-item-hover-color: foregroundColor(@status-menu-popup-item-hover-background-color, @light-background-font-color, @dark-background-font-color);
+
+@quicksearch-border-color: #999999;
+@quicksearch-background-color: @field-background;
+@quicksearch-width: 166px;
+@quicksearch-border-top-color: #E4E4E4;
+
+@text-highlight-color: darken(@title, 3%);
+@left-menu-background-color: @box-background;
+@left-menu-border-color: @box-border;
+@left-menu-section-color: @font-color;
+@left-menu-item-color: @font-color;
+@left-menu-item-hover-background-color: @menu-item-hover;
+@left-menu-item-hover-color: foregroundColor(@left-menu-item-hover-background-color, @light-background-font-color, @dark-background-font-color);
+@left-menu-item-selected-text-color: @text-highlight-color;
+@left-menu-bullet: ~"url('STYLE_ICON:LEFT_MENU_BULLET:@{field-focus-border}')";
+
+@warning-color: @field-invalid-label-color;
+
+@main-section-font-color: @font-color;
+
+@page-tab-border-color: @page-heading-border-color;
+@page-tab-background-color: @tab-background;
+@page-tab-font-color: foregroundColor(@page-tab-background-color, @light-background-font-color, @dark-background-font-color);
+@page-tab-active-font-color: @link-color;
+@page-tab-active-background-color-without-main-border: @body-background;
+@page-tab-active-background-color-with-main-border: @main-section-background;
+
+@notification-information-background-color: #F0FEF0;
+@notification-information-border-color: #96CF93;
+@notification-information-font-color: @font-color;
+@notification-warning-background-color: #FFF8EC;
+@notification-warning-border-color: #E3bA3F;
+@notification-warning-font-color: @notification-information-font-color;
+@notification-error-background-color: #FDF1EE;
+@notification-error-border-color: #EC6E6E;
+@notification-error-font-color: @notification-information-font-color;
+@notification-reminder-background-color: #f9fbfd;
+@notification-reminder-border-color: #c1cce4;
+@notification-reminder-font-color: @font-color;
+
+@stacked-notification-border-color: @field-border-color;
+@stacked-notification-background-color: @field-background;
+@stacked-notification-color: @font-color;
+
+@breadcrumb-background-color: @inner-box-background;
+@breadcrumb-border-color: @inner-box-border;
+@breadcrumb-link-color: @link-color;
+@breadcrumb-item-color: @left-menu-item-color;
+@breadcrumb-separator-color: darken(@breadcrumb-border-color, 5%);
+@breadcrumb-separator: ~"url('STYLE_ICON:BREADCRUMB_SEPARATOR:@{breadcrumb-separator-color}')";
+
+@wizard-information-background-color: @inner-box-background;
+@wizard-information-border-color: @inner-box-border;
+@wizard-information-color: @left-menu-item-color;
+
+@button-bottom-color: @button-background;
+@button-top-color: lighten(@button-bottom-color, 9%);
+@button-font-color: foregroundColor(@button-background, @light-background-font-color, @dark-background-font-color);
+@button-font-shadow-color: fade(foregroundColor(@button-background, @light-background-shadow-color, @dark-background-shadow-color), 15%);
+@button-focus-bottom-color: @button-focus-background;
+@button-focus-top-color: lighten(@button-focus-bottom-color, 17%);
+@button-focus-font-color: foregroundColor(@button-focus-background, @light-background-font-color, @dark-background-font-color);
+@button-focus-font-shadow-color: fade(foregroundColor(@button-focus-background, @light-background-shadow-color, @dark-background-shadow-color), 15%);
+@button-gradient-type: linear;
+@button-top-border-color: darken(@button-bottom-color, 1%);
+@button-bottom-border-color: darken(@button-bottom-color, 15%);
+@button-disabled-bottom-color: @button-disabled-background;
+@button-disabled-top-color: lighten(@button-disabled-bottom-color, 25%);
+@button-disabled-font-color: #555;
+@button-disabled-top-border-color: darken(@button-disabled-bottom-color, 10%);
+@button-disabled-bottom-border-color: darken(@button-disabled-bottom-color, 15%);
+@multi-action-button-icon: ~"url('STYLE_ICON:MULTI_ACTION_BUTTON:@{button-font-color}')";
+@multi-action-button-focus-icon: ~"url('STYLE_ICON:MULTI_ACTION_BUTTON:@{button-focus-font-color}')";
+@multi-action-button-toolbar-icon: ~"url('STYLE_ICON:MULTI_ACTION_BUTTON:@{font-color}')";
+@multi-action-button-option-hover-background-color: @left-menu-item-hover-background-color;
+
+@notification-button-bottom-color: @button-bottom-color;
+@notification-button-top-color: @button-top-color;
+@notification-button-focus-bottom-color: @button-focus-bottom-color;
+@notification-button-focus-top-color: @button-focus-top-color;
+@notification-button-top-border-color: @button-top-border-color;
+@notification-button-bottom-border-color: @button-bottom-border-color;
+
+@rich-text-toolbar-button-top-color: lighten(@box-background, 30%);
+@rich-text-toolbar-button-bottom-color: darken(@box-background, 10%);
+@rich-text-toolbar-button-focus-top-color: darken(@rich-text-toolbar-button-top-color, 10%);
+@rich-text-toolbar-button-focus-bottom-color: darken(@rich-text-toolbar-button-bottom-color, 10%);
+@rich-text-toolbar-button-gradient-type: linear;
+@rich-text-toolbar-button-top-border-color: darken(desaturate(@box-border, 15%), 10%);
+@rich-text-toolbar-button-bottom-border-color: darken(@rich-text-toolbar-button-top-border-color, 15%);
+
+@form-box-background-color: @inner-box-background;
+@form-box-border-color: @inner-box-border;
+
+@item-value-background-color: saturate(@inner-box-background, 80%);
+
+@login-form-separator-color: @page-heading-border-color;
+
+@field-font-color: @font-color;
+@field-border-color: #cccccc;
+@field-top-border-color: darken(@field-border-color, 10%);
+@field-bottom-border-color: lighten(@field-border-color, 5%);
+@field-background-color: @field-background;
+@field-focus-font-color: @field-font-color;
+@field-focus-border-color: @field-focus-border;
+@field-focus-background-color: @field-background-color;
+@field-invalid-font-color: @field-font-color;
+@field-invalid-border-color: #ff0000;
+@field-invalid-label-color: @field-invalid-border-color;
+@field-invalid-background-color: @field-background-color;
+@field-required-color: @attention-color;
+
+@field-popup-background-color: @field-background;
+@field-popup-border-color: @field-border-color;
+@field-popup-option-font-color: @field-font-color;
+@field-popup-option-selected-font-color: @left-menu-item-hover-color;
+@field-popup-option-selected-background-color: darken(@left-menu-item-hover-background-color, 5%);
+@field-popup-option-hover-font-color: @left-menu-item-hover-color;
+@field-popup-option-hover-background-color: @left-menu-item-hover-background-color;
+
+@field-popup-header-background-color: @inner-box-background;
+
+@container-popup-title-font-color: @title;
+@container-popup-border-color: @field-border-color;
+@container-popup-background-color: @field-background;
+@container-popup-actions-background-color: darken(@box-background, 4%);
+
+@selection-field-icon-top-color: @field-background;
+@selection-field-icon-bottom-color: darken(@box-background, 7%);
+@selection-field-focus-background-color: @left-menu-item-hover-background-color;
+@selection-field-popup-shadow-color: #8B8B8B;
+
+@calendar-icon-top-color: @selection-field-icon-top-color;
+@calendar-icon-bottom-color: @selection-field-icon-bottom-color;
+
+@datepicker-day-background-color: #eee;
+@datepicker-selected-font-color: @field-focus-font-color;
+@datepicker-selected-background-color: @field-focus-background-color;
+@datepicker-selected-border-color: @field-focus-border-color;
+
+@filters-background-color: lighten(@box-background, 1%);
+@filters-border-color: @box-border;
+
+@results-toolbar-button-background-color: #f4f4f4;
+@results-toolbar-button-hover-background-color: #ffffff;
+@results-toolbar-button-selected-background-color: #ffffff;
+@results-toolbar-button-border-color: #dddddd;
+
+@tiled-result-heading: @tiled-result-title;
+@tiled-result-price-color: #E85500;
+@tiled-result-price-border-color: darken(@results-toolbar-button-border-color, 6%);
+@tiled-result-price-top-color: #fdfdfd;
+@tiled-result-price-bottom-color: #e0e0e0;
+@tiled-result-price-shadow-color: #ffffff;
+@tiled-result-price-gradient-type: glass;
+@tiled-result-price-hover-border-color: lighten(desaturate(@horizontal-menu-selected-background-bottom, 15%), 5%);
+@tiled-result-price-hover-top-color: lighten(@tiled-result-price-hover-border-color, 20%);
+@tiled-result-price-hover-bottom-color: @tiled-result-price-hover-border-color;
+@tiled-result-price-hover-shadow-color: lighten(@tiled-result-price-hover-top-color, 7%);
+@tiled-result-price-hover-color: foregroundColor(@tiled-result-price-hover-border-color, @light-background-font-color, @dark-background-font-color);
+
+@maturity-table-out-color: #b5b5b5;
+@maturity-table-in-positive-color: @text;
+@maturity-table-in-zero-color: green;
+@maturity-table-in-winner-color: green;
+@maturity-table-zebra-color: #fcfff2;
+ 
+
+@data-table-outer-border-color: @box-border;
+@data-table-inner-border-color: #C6D6E1;
+@data-table-header-font-color: @font-color;
+@data-table-header-top-color: @data-table-header;
+@data-table-header-bottom-color: @data-table-header;
+@data-table-header-gradient-type: linear;
+@data-table-even-background-color: @field-background;
+@data-table-odd-background-color: #f9fbfc;
+@data-table-hover-background-color: #fefee2;
+@data-table-title-color: @tiled-result-title;
+@no-results-border-color: @inner-box-border;
+@no-results-background-color: @inner-box-background;
+
+@dashboard-background-color: @inner-box-background;
+@dashboard-border-color: @inner-box-border;
+
+@dashboard-action-border-color-horizontal: #D9E2EE;
+@dashboard-action-border-color-vertical: #C1CCE4;
+@dashboard-action-glow-color: lighten(@field-focus-border-color, 15%);
+@dashboard-action-background-start-color: #fbfdfe;
+@dashboard-action-background-end-color: #eff8fc;
+@dashboard-action-font-color: lighten(@font-color, 10%);
+
+@dashboard-status-background-color: @box-background;
+@dashboard-status-border-color: @box-border;
+@dashboard-status-item-color: @left-menu-item-color;
+@dashboard-status-section-color: darken(@title, 10%);
+@dashboard-status-width-on-home: 220px;
+
+@banner-border-color: @box-border;
+@banner-background-color: @box-background;
+
+@horizontal-rule-color: @box-border;
+@thumbnail-border-color: @page-heading-border-color;
+@thumbnail-border-width: 0px;
+@thumbnail-shadow-color: rgba(0, 0, 0, 0.25);
+@thumbnail-selected-shadow-color: rgba(0, 0, 0, 0.40);
+@thumbnail-hover-border-color: #555555;
+@thumbnail-hover-shadow-color: rgba(0, 0, 0, 0.5);
+@no-image-color: #bbbbbb;
+@image-popup-title-background-color: rgba(0, 0, 0, 0.7);
+@image-popup-navigation-background-color: rgba(0, 0, 0, 0.5);
+@image-popup-navigation-hover-background-color: rgba(0, 0, 0, 0.9);
+
+@full-screen-popup-background-color: #111111;
+@full-screen-popup-color: @dark-background-font-color;
+
+@results-price-color: @tiled-result-price-color;
+
+@icon-button-border-color: @tiled-result-price-border-color;
+@icon-button-color: @tiled-result-price-color;
+@icon-button-shadow-color: @tiled-result-price-shadow-color;
+@icon-button-gradient-type: @tiled-result-price-gradient-type;
+@icon-button-top-color: #FFFFFF;
+@icon-button-top-color-darken: #F1F1F1;
+@icon-button-bottom-color: #E7E7E7;
+@icon-button-bottom-color-darken: #F9F9F9;
+@icon-button-hover-border-color: @tiled-result-price-hover-border-color;
+@icon-button-hover-color: @tiled-result-price-hover-color;
+@icon-button-hover-shadow-color: @tiled-result-price-hover-shadow-color;
+@icon-button-hover-top-color: @tiled-result-price-hover-top-color;
+@icon-button-hover-bottom-color: @tiled-result-price-hover-bottom-color;
+
+@hierarchy-border-color: @box-border;
+
+@actions-box-background-color: #F5F9FE;
+@actions-box-border-color: #E1ECF3;
+@actions-box-shadow-color: #FFFFFF;
+
+@customized-key-color: #990000;
+
+@pagination-information-color: #666666;
+
+@time-color: #999999;
+
+@amount-debit-color: #ff0000;
+@amount-credit-color: @text; 
+@amount-balance-low-color: #ff0000;
+@amount-balance-medium-color: #d98c00;
+@amount-balance-high-color: #008000; 
+
+@decorated-button-background-color: #F4F4F4;
+@decorated-button-background-hover-color: #EBEBEB;
+@decorated-button-text-color: #3E7BC7;
+@decorated-button-description-color: #666666;
+@decorated-button-border-color: #DDDDDD;
+@decorated-button-text-shadow-color: #FFFFFF;
+@decorated-button-box-shadow-color: #FFFFFF;
+
+@loader-information-color: #777777;
+@loader-information-font-size: 10px;
+
+@loading-spinner-border-color: #CCCCCC;
+@loading-spinner-font-color: #666699;
+@loading-spinner-background-color: rgba(255, 255, 255, 0.5);
+@loading-spinner-box-shadow-color: #EBEBEB;
+@loading-spinner-box-normal-color: #8193B6;
+@loading-spinner-box-highlight-color: #FF6600;
+
+@map-results-border-color: #DDDDDD;
+@map-results-background-color: #F1F1F1;
+@map-results-label-color: #888888;
+
+@help-body-background-color: @body-background;
+@help-box-background-color: @inner-box-background;
+@help-box-border-color: @inner-box-border;
+@help-font-color: @text;
+@help-link-color: @link;
+@help-location-color: #4D4D4D;
+@help-heading-color: @title;
+@help-heading-shadow-color: @page-heading-shadow-color;
+@help-heading-border-color: @inner-box-border;
+
+@progress-bar-border-color: @field-border-color;
+@progress-bar-background-color: @field-background-color;
+@progress-bar-fill-color: @data-table-header;
+@progress-bar-text-color: @font-color;
